@@ -1,0 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
+h2 {
+	text-align: center;
+}
+
+body,
+html {
+	position: relative;
+	height: 100%;
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+}
+
+hr {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.container {
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}

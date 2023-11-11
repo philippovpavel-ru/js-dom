@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задачи по DOM</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/slider.js" defer></script>
+	<script src="js/popup.js" defer></script>
+	<script src="js/coloring.js" defer></script>
+</head>
+<body>
+	<main class="wrapper">
+		<div class="container">
+			<h2>Простой слайдер</h2>
+
+			<div class="simple-slider-wrapper">
+				<a class="arrow" id="left" href="#">←</a>
+				<div class="slider">
+					<ul class="items" id="items">
+						<li class="item">1</li>
+						<li class="item">2</li>
+						<li class="item">3</li>
+						<li class="item">4</li>
+						<li class="item">5</li>
+						<li class="item">6</li>
+						<li class="item">7</li>
+						<li class="item">8</li>
+					</div>
+				</li>
+				<a class="arrow" id="right" href="#">→</a>
+			</div>
+
+			<hr>
+
+			<h2>Модальное окно</h2>
+			<div class="popup-wrapper">
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem magnam
+					ratione quasi alias adipisci molestias doloribus, provident eum natus
+					rerum, numquam delectus cum at nobis consectetur deserunt perspiciatis
+					eveniet temporibus.
+				</p>
+				<button class="btn" id="openOverlay">Открыть</button>
+			</div>
+
+			<hr>
+
+			<h2>Создание и работа с DOM</h2>
+			<div class="blocks-coloring-wrapper">
+				<div class="controls">
+					<input type="number" min="0" class="quantity-selector" />
+					<input type="color" class="color-selector" />
+				</div>
+				<div class="blocks"></div>
+			</div>
+		</div>
+	</main>
+
+	<script type="html/template" id="modalTemplate">
+		<a href="#" class="close">x</a>
+		<div class="content"></div>
+	</script>
+</body>
+</html>
